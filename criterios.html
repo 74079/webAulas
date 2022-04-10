@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .cabeçalho{
+	margin:0;
+	height: 30px;
+	line-height: 200%;
+	width: 100%;
+	padding:0;
+	text-align: center;
+	background-color: goldenrod;
+}
+
+.cabeçalho a{
+    text-decoration: none;
+}
+
+	*{
+	margin:0;
+	padding:0;
+	color: azure;
+	font-family:'Arial';
+	}
+	
+.menu{
+	width:100%;
+	height:50px;
+	background-color: cadetblue;
+	}
+	
+.menu>ul{
+	list-style:none;	
+	position:relative;
+	margin-left:50px;
+	}
+.menu ul li{
+		width:150px;
+		float:left;
+	}
+
+.menu a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color: cadetblue;
+	text-align:center;
+	}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.menu ul li:hover ul{
+	visibility:visible;
+	}
+	
+.menu a:hover{ /*cor do sensor do indicador do mouse  */
+	background-color: black;
+	}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+	}
+.menu ul ul li a{
+	background-color:rgb(75, 194, 207);
+	}
+#bt_menu{
+	display: none;
+	}
+label[for='bt_menu']{
+	padding:5px;
+	background-color:#222;
+	color:#fff;
+	font-family:'Arial';
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+	}	
+label[for='bt_menu']:hover{
+	background-color:#f4f4f4;
+	color:#aaa;
+	}
+@media (max-width: 800px) {
+
+	.cabeçalho>ul{
+		margin-left: 0;
+	}
+
+	.cabeçalho{
+		margin-top: 5px;
+	}
+
+	.cabeçalho ul>li{
+		width: 100%;
+		float: 0;
+	}
+	.cabeçalho ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+
+	.cabeçalho ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+
+
+.menu{
+	margin-left:-100%;
+	transition:all .4s;
+	}
+label[for='bt_menu']{
+	display:block;
+	}
+.menu>ul{
+	margin-left:0;
+	}
+.menu{
+	margin-top:5px;
+	}
+.menu ul li{
+	width:100%;
+	float:none;
+	}
+.menu ul ul{
+	position:static;
+	overflow:hidden;
+	max-height:0;
+	transition:all .4s;
+	}
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+#bt_menu:checked ~ .menu{
+	margin-left:0;
+	}
+}
+
+.titulo{
+	
+	width: 100%;
+	margin-left:auto;
+	height: 140px;
+	background-color: rgb(170, 166, 166);
+}
+
+h1{
+	margin-left: 10%;
+	line-height: 225%;
+}
+
+h3{
+	margin-left: 10%;
+	line-height: 700%;
+}
+
+
+.titulo h4{	
+    margin-top: 100px;
+    
+	padding: 8px 20px;
+	text-align: left;
+	background-color: white; 
+    color: black;
+    border-left: 8px solid #4CAF50;
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+
+.titulo h5{	
+    margin-top: 30px;
+	padding: 8px 30px;
+	text-align: left;
+	background-color: white; 
+    color: black;
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+
+.criterios{
+    padding: 8px 30px;
+	text-align: left;
+	background-color: white; 
+    color: rgb(3, 3, 3);
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+
+.atecao{
+    padding: 8px 30px;
+	text-align: left;
+    color: #222;
+   
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+
+.titulo h6{
+	width: 100%;
+	height: 2px;
+	background-color:#4CAF50;
+}
+
+.titulo h2{
+    padding: 8px 30px;
+	text-align: left;
+    color: #222;
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+.homens {
+    padding: 8px 30px;
+	text-align: left;
+    color: #222;
+	transition-duration: 0.4s;
+	margin-left: 150px;
+}
+
+.titulo table {
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+
+  margin-left: 150px;
+  background-color: #7e6f6f;
+  
+}
+
+th{
+    background-color: green;
+    border: white;
+    
+    
+}
+
+td, th {
+  border: 1px solid #686666;
+  text-align: left;
+  padding: 8px;
+  color: #181818;
+ 
+}
+
+tr:nth-child(even) {
+
+  background-color: #aba0a0;
+}
+
+.rodape{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.rodape>ul{
+	list-style: none;
+	position: relative;
+	margin-left: 150px;
+	margin-right: 50px;
+}
+
+.rodape ul li{
+	width: 250px;
+	float: left;
+}
+.rodape a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(94, 92, 92);
+	text-align: center;
+}
+.rodape ul ul{
+	list-style: none;
+	position: absolute;	
+}
+
+
+.rodape ul ul li{
+	float:none;
+	color: #222;
+}
+
+.sede p{
+	margin-top: 5px;
+	color: #222;
+}
+
+.horarios p{
+	margin-top: 5px;
+	color: #222;
+}
+
+</style>
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+<nav class="cabeçalho">
+	<ul>
+		<a href="https://coronavirus.ceara.gov.br/">Informações corona virus</a> <br>
+	 </ul>
+ </nav>
+
+<nav class="menu">
+	<ul>
+    	<li><a href="#">governo</a></li>
+          <li><a href="#">Homorrede</a>
+        	<ul>
+            	<li><a href="https://www.hemocentro.unicamp.br/">hemocentro Unicampe </a>
+                <li><a href="https://www.boldrini.org.br/">hemocentro boldrini</a>
+            </ul>
+        </li>
+        <li><a href="#">mais sites</a>
+        	<ul class="submenu">
+            	<li><a href="https://detran.sp.gov.br/">Detran</a>
+                <li><a href="https://www.todamateria.com.br/">cultura</a>
+            </ul>
+        </li>
+      
+        <li><a href="#">Contato</a></li>
+    </ul>
+ </nav>
+
+
+<nav class="titulo">
+    
+ <h1 style="font-size:60px; color: #222; font-family:Arial;" >HOMECE</h1>
+
+ <h4 style="font-size:30px; font-weight: lighter; color: rgb(101, 100, 100); font-family:Helvetica;" >Critérios para doação de sangue</h4>
+
+ <h5 style="font-size:12px; font-weight: lighter; color: rgb(101, 100, 100); font-family:Helvetica; font-weight: bold;">PARA SER DOADOR DE SANGUE É PRECISO:</h5>
+    <p class="criterios" style="color:#222;">– Estar saudável <br>
+    – Estar bem alimentado <br>
+    – Pesar acima de 50kg <br>
+    – Ter entre 16 e 69 anos <br>
+    – Apresentar documento oficial com foto</p>
+ 
+    <p class="atecao" style="color:#222; font-size: 13px;"><b style="color: #222;" >Atencao:</b>Os candidatos a doação Os candidatos à doação de sangue com idade entre 16 e 17 anos devem apresentar o Termo de Consentimento assinado pelo responsável legal, disponível aqui. <br> O limite de idade para a primeira doação é de 60 (sessenta) anos, 11 (onze) meses e 29 (vinte e nove) dias.</p>
+     
+
+    <h2 style="font-size:12px; font-weight: lighter; color: rgb(101, 100, 100); font-family:Helvetica; font-weight: bold;" >INTERVALO PARA DOAÇÃO DE SANGUE</h2>
+    <p class="homens" >– Homens podem doar sangue a cada 2 meses, até 4 vezes por ano;<br>– Mulheres podem doar sangue a cada 3 meses, até 3 vezes por ano.</p>
+
+
+    <table >
+        <tr>
+        <th colspan="2">Tipos de doacao</th>
+        </tr>
+        <tr>
+          <td>Doação Voluntária/Espontânea</td>
+          <td>Doação realizada sem vínculo com paciente.</td>
+        
+        </tr>
+        <tr>
+          <td>Doação de Reposição</td>
+          <td>Realizada para repor o estoque do banco de sangue em virtude do uso por <br> algum paciente internado em um hospital atendido pelo Hemoce.</td>
+        </tr>
+        <tr>
+            <td>Doação Autóloga</td>
+            <td>É aquela em que a pessoa doa o sangue para ela mesmo.</td>
+          
+          </tr>
+          <tr>
+            <td>Doação por convocação</td>
+            <td>Alguns voluntários comparecem ao Hemoce para doar apenas por convocação, na<br>maioria dos casos, acontece com pessoas que possuem tipos sanguíneos raros.</td>
+          
+          </tr>
+      </table>
+      <br><br><br><br>
+
+	<h6></h6>
+    
+	<nav class="rodape">
+		<ul>
+			<li><a style="font-size: 15px; font-weight: bold;" href="#">HEMOCE.SP.GOV.BR</a></li>
+			  <li class="sede" ><a style="font-size: 12px; font-weight: bold; font-family: Helvetica;" href="#">SEDE DO HEMOCE</a>
+				<ul>
+                    <p style="font-size: 12px; font-family:Helvetica; " >AV. JOSÉ BASTOS <br> 3390 - RODOLFO TEÓFILO <br>CAMPINAS, SP <br>CEP: 13386663 <br>CONTATO: (19) 98987-7077</p>
+				</ul>
+			</li>
+			<li class="horarios" ><a style="font-size: 12px; font-weight: bold; font-family: Helvetica;" href="#">HORARIOS DE ATENDIMENTO</a>
+				<ul class="subrodape">
+					<p style="font-size: 12px; font-family:Helvetica; " >07H AS 18:30 DE SEGUNDA A SEXTA<br>07H AS 17:30 AOS SABADOS</p>
+				</ul>
+			</li>	
+		  
+			<li><a style="font-size: 12px; font-weight: bold; font-family: Helvetica;" href="#">NOSSOS CANAIS</a></li>
+		</ul>
+	 </nav>
+ </nav> 
+ 
+
+
+</body>
+</html>
