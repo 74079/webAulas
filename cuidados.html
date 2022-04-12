@@ -27,10 +27,23 @@
 	font-family:'Arial';
 	}
 	
+	.doacaosangue{
+	margin-top: -85px;
+	height: 50px;
+	color: #222;
+	font-size: 30px;
+	list-style: none;
+	margin-left: 500px;
+}
+
 .menu{
-	width:100%;
+	width:auto;
 	height:50px;
 	background-color: cadetblue;
+	}
+
+	.menu{
+		border: 1px solid #222;
 	}
 	
 .menu>ul{
@@ -155,7 +168,7 @@ label[for='bt_menu']{
 	width: 100%;
 	margin-left:auto;
 	height: 140px;
-	background-color: rgb(170, 166, 166);
+	background-color:  cadetblue;
 }
 
 h1{
@@ -199,19 +212,19 @@ h3{
 	margin-left: 150px;
 }
 
-.titulo ol li{
-    margin-top: 30px;
-    color: #222 ;
-    margin-left: 195px;
 
+.titulo ol li{
+
+	margin-top: 20px;
+	margin-left: 170px;
+	
 }
 
-
 .atecao{
-    padding: 8px 30px;
+	margin-top: -17px;
+    padding: 3px 25px;
 	text-align: left;
     color: #222;
-   
 	transition-duration: 0.4s;
 	margin-left: 150px;
 }
@@ -281,6 +294,12 @@ h3{
 	color: #222;
 }
 
+.imagem img{
+	width: 100% ;
+	height:400px;
+	margin-top: 40px;
+	
+}
 </style>
 </head>
 <body>
@@ -288,7 +307,7 @@ h3{
 <label for="bt_menu">&#9776;</label>
 <nav class="cabeçalho">
 	<ul>
-		<a href="https://coronavirus.ceara.gov.br/">Informações corona virus</a> <br>
+		<a href="https://www.hemocentro.unicamp.br/noticias/ministerio-divulga-nota-tecnica-com-mudancas-para-doadores-relacionadas-ao-covid/">CRITERIOS PARA DOADORES - <span style="color:red;font-weight:bold">COVID-19</span></a> <br>
 	 </ul>
  </nav>
 
@@ -315,53 +334,48 @@ h3{
 <nav class="titulo">
     
  <h1 style="font-size:60px; color: #222; font-family:Arial;" >HOMECE</h1>
+ <ul>
+	<li class="doacaosangue">Doação de sangue</li>
+</ul>
+<div class="imagem">
+   <img src="https://www.hospitaldecruzilia.com.br/site/images/DOACAO%20DE%20SANGUE.jpg">
+</div>
 
- <h4 style="font-size:30px; font-weight: lighter; color: rgb(101, 100, 100); font-family:Helvetica;" >Etapas para Doação de Sangue</h4>
+ <h4 style="font-size:30px; font-weight: lighter; color: rgb(101, 100, 100); font-family:Helvetica;" >Cuidados Pós-doação</h4>
  <ol>
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">AGENDAMENTO</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Antes de se dirigir a unidade mais próxima do Hemoce, o candidato deve agendar sua doação no portal do doador, escolhendo dia, horário e local. O processo será finalizado <br>
-         com o preenchimento do nome completo, e – mail e telefone do voluntário.</p>
+
+    <li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Permaneça no local por 15 minutos após a doação.</p>
+		
  
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">CADASTRO</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Para realizar o cadastro é necessário apresentar um documento de identificação oficial com foto ou cópia autenticada (RG, carteira nacional de habilitação, carteira de trabalho, <br> carteira profissional emitida por classe, certificado de reservista ou passaporte) além de informações para contato de forma a garantir a comunicação do Hemoce com o doador. <br> Também são aceitos documentos eletrônicos, como a carteira nacional de habilitação, pelo aplicativo “Carteira Digital” e título de eleitor pelo aplicativo “eTítulo”, desde que <br> contenham a foto do candidato e que sejam validados pelas ferramentas “Vio:QR Seguro” e “eTitulo”, respectivamente.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Evite fumar por 1h.</p>
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">PRÉ-LANCHE</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Após o cadastro, o doador é convidado a realizar o pré-lanche, para manter o nível de hidratação e também os níveis de açúcar adequados para a coleta.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Não consuma bebidas alcoólicas por 12h.</p>
 
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Aumente a ingestão de líquidos por 24h.</p>
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">PRÉ-TRIAGEM</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Após o pré-lanche, serão realizados exames de verificação de pressão arterial, pulso, temperatura, dosagem de hemoglobina e verificação de peso.
-
-    </p>
-
-
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">TRIAGEM CLÍNICA</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">O candidato passa por uma entrevista individual e sigilosa para verificar se a doação pode ser feita naquele momento. Para sua segurança é importante que todas as perguntas <br> sejam respondidas com sinceridade, clareza e honestidade. Caso a doação não possa ser realizada, o candidato recebe orientações sobre o motivo e o tempo que deverá <br> permanecer sem doar sangue e é encaminhado para acompanhamento, quando necessário. Caso a doação possa ser feita o candidato é encaminhado para coleta do sangue, <br> após assinatura do Termo de Consentimento Livre e Esclarecido.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Evite grandes esforços físicos por 12h, especialmente com o braço da doação.</p>
 
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">VOTO DE AUTO-EXCLUSÃO</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Totalmente sigiloso, permite ao candidato confirmar ou negar as informações prestadas sem expor diretamente suas respostas ao profissional da triagem. Se o voto for SIM <br>O candidato afirma que seu sangue é seguro para transfusão e não oferece risco ao paciente. Se o voto for NÃO, o candidato não está seguro quantos às suas respostas. <br> A coleta e os exames serão realizados, porém o sangue será descartado.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Nas 12h após a doação, evite atividades de risco (manipular máquinas de cortes ou tornos, trabalhar em andaime ou grandes alturas, dirigir transportes coletivos ou motocicletas)</p>
 
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Caso apresente hematoma ou mancha arroxeada no local da punção da agulha, aplicar compressas de gelo no local nas primeiras 12 a 24 horas.</p>
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">COLETA DE SANGUE</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Nesta etapa o doador é orientado a lavar os braços (local da punção) com água e sabão. Caso o posto de coleta ou coleta externa não tenha lavatório, é feita assepsia do local <br> da punção, o que traz segurança à coleta. A doação é feita através de punção com agulha em uma veia do braço, com material estéril, descartável e padronizado, o que permite <br> a coleta do sangue no tempo e quantidade adequados, além de assegurar que não haverá contaminação do doador. O volume máximo de sangue colhido é de 460 ml em um <br> tempo médio de 7 a 10 minutos.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Em caso de vermelhidão e dor no local da punção (FLEBITE), aplicar compressas mornas no local e procurar o serviço de coleta do Hemoce.</p>
 
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">LANCHE</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Após a coleta de sangue, o doador é novamente convidado a fazer um lanche e aguardar, no mínimo, 15 minutos sentado no posto de coleta.
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Caso apresente mal-estar ou desmaio, sentar-se e colocar a cabeça abaixo dos joelhos ou deitar-se com os pés em nível acima da cabeça. Caso persista, entre em contato conosco pelos nossos canais.</p>
 
-    </p>
-
-
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">ENTREGA DE CARTEIRINHA</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Logo após o lanche, o voluntário se dirige até a sala do serviço social (hemocentros) ou recepção (postos de coleta) para receber a carteirinha atualizada com o número de doações. <br> Em caso de primeira doação, o doador recebe a carteirinha de doador de primeira vez.</p>
-
-
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">EXAMES REALIZADOS NO SANGUE COLETADO</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Os exames realizados no sangue coletado são: tipagem sanguínea, eletroforese de hemoglobina e testes para hepatite B e C, sífilis, doença de Chagas, HIV e HTLV I e II. <br> Para maior segurança o Hemoce realiza também testes de biologia molecular para Hepatites B e C e HIV, chamado de teste NAT. Em algumas situações os testes poderão <br> não ser realizados  e o doador poderá ser chamado para orientações e coleta de novas amostras.</p>
-
-    <li><b style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;">RESULTADO DE EXAMES</b></li>
-    <p class="atecao" style="color:#222; font-size: 13px;">Cerca de 45 dias após a doação, o voluntário pode acessar o resultado dos exames sorológicos pelo portal do doador, através do site: doador.hemoce.ce.gov.br. <br> Caso seja necessário esclarecimento sobre os resultados, o voluntário será convidado a comparecer novamente ao Hemocentro <br> para coletar uma nova amostra de sangue e receber orientações.</p>
+	<li style="color: rgb(77, 74, 74); font-size: 14px; font-family:Helvetica;"></li>
+    <p class="atecao" style="color:#222; font-size: 15px;">Entre em contato conosco pelo site: doador.hemoce.ce.gov.br caso apresente: dor atrás dos olhos, dor de cabeça, diarréia, vômitos, tontura, febre, dor nas articulações ou dor muscular (mialgia) em até 15 dias após a doação. Para que possamos avaliar a necessidade do bloqueio do sangue doado para segurança dos pacientes que receberão as transfusões. Esses sintomas estão associados a doenças infecciosas.</p>
 </ol>
       <br><br><br><br>
 
@@ -379,6 +393,7 @@ h3{
 				<ul class="subrodape">
 					<p style="font-size: 12px; font-family:Helvetica; " >07H AS 18:30 DE SEGUNDA A SEXTA<br>07H AS 17:30 AOS SABADOS</p>
 				</ul>
+				<BR><BR><BR><BR></BR></BR></BR></BR>
 			</li>	
 		  
 			<li><a style="font-size: 12px; font-weight: bold; font-family: Helvetica;" href="#">NOSSOS CANAIS</a></li>
