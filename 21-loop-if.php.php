@@ -1,5 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
 <?php
-
-/*faca um codigo de estrurura de repticao e decisao caso seja a opcao */
-
+$st =1;
+while($st == 2){
+     echo "ul";
+     <ul>
+     "<li>piano</li>" 
+     </ul>
+    
+       $st++;
+     
+}
 ?>
+
+</body>
+</html>
+
+
+
+
+
