@@ -1,25 +1,29 @@
-
 <!DOCTYPE html>
 <html>
 <body>
 
 <?php
-$st =1;
-while($st == 2){
-     echo "ul";
-     <ul>
-     "<li>piano</li>" 
-     </ul>
-    
-       $st++;
-     
+$listas = 1;
+while($listas <= 1) {
+  echo "$listas - Listas".
+  
+  "<ol>
+        <li>violao</li>  
+        <li>quitarra</li> 
+        <li>violino</li>  
+        <li>piano</li>  
+        <li>cidade</li>  
+        <li>hover</li>  
+        <li>condominio</li>  
+        <li>boldo</li>  
+        <li>cracha</li>  
+        <li>safona</li>   
+  </ol>";
+  $listas++;
 }
 ?>
-
 </body>
 </html>
-
-
 
 
 
