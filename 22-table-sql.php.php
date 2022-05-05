@@ -1,9 +1,9 @@
 <?php 
 /*
-$Driver = "com.mysql.cj.jdbc.Driver";
-$url ="jdbc:mysql://localhost:3306/agenda?&serverTimezone=UTC";
+$Driver = "";
+$url ="";
 $user = "user";
-$password= "199426";
+$password= "";
 $dbname = "5SI";
 
 
