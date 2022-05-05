@@ -26,36 +26,31 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 */
-
-
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "5Si";
+$dbname = "5SI";
 
-// Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
-if(!$conn){
-  die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
 }
 
 
+$sql = "INSERT INTO Pessoa(nomePessoa, emailPessoa, idadePessoa)
+VALUES ('lucas', 'henriquefagunde@gmail.com','27')";
 
-$sql = "INSERT INTO(nomePessoa, emailPessoa, emailPessoa, idadePessoa)
-VALUES ('lucas', 'henriquefagunde@gmail.com', '27')";
 
-if ($conn->query($sql) === TRUE) {
+
+if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-$conn->close();
-
-
+mysqli_close($conn);
 /*
-
 
 $url = "localhost";
 $user = "root";
@@ -80,24 +75,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
