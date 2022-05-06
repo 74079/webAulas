@@ -37,11 +37,14 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
+/*
 
 $sql = "INSERT INTO Pessoa(nomePessoa, emailPessoa, idadePessoa)
 VALUES ('lucas', 'henriquefagunde@gmail.com','27')";
+*/
 
 
+$sql = "DELETE FROM Pessoa WHERE idPessoa=2;";
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
