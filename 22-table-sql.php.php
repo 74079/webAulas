@@ -41,10 +41,15 @@ if (!$conn) {
 
 $sql = "INSERT INTO Pessoa(nomePessoa, emailPessoa, idadePessoa)
 VALUES ('lucas', 'henriquefagunde@gmail.com','27')";
-*/
+
 
 
 $sql = "DELETE FROM Pessoa WHERE idPessoa=2;";
+*/
+
+$sql = "ALTER TABLE Pessoa CHANGE COLUMN ROSE nomePessoa varchar(80) not null";
+
+
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
