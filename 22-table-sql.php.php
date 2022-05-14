@@ -47,8 +47,12 @@ VALUES ('lucas', 'henriquefagunde@gmail.com','27')";
 $sql = "DELETE FROM Pessoa WHERE idPessoa=2;";
 */
 
-$sql = "ALTER TABLE Pessoa CHANGE COLUMN ROSE nomePessoa varchar(80) not null";
+/*MUDANDO O TITULO DO NOME DA PESSOA
+$sql = "ALTER TABLE Pessoa CHANGE COLUMN nomePessoa ROSE varchar(80) not null";*/
 
+$sql = "ALTER TABLE Pessoa MODIFY COLUMN nomePessoa ROSE varchar(80) not null";
+
+$sql = "ALTER TABLE Pessoa MODIFY COLUMN nomePessoa ROSE varchar(80) not null";
 
 
 if (mysqli_query($conn, $sql)) {
