@@ -8,7 +8,4 @@ $precoProduto=$_POST['precoProduto'];
 $sqlInsertCity="insert into produto (nomeProduto, precoProduto) values ('$nomeProduto', $precoProduto);";
 mysqli_query($con, $sqlInsertCity); // sqlInsertCity --> so uma descricao da variavel 
 
-
-header('location:viewall.php');
-
 ?>

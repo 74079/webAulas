@@ -411,7 +411,7 @@ h5{
 
 <nav class="menu">
 	<ul>
-    	<li><a href="cadastro.html">cadastro</a></li>
+    	<li><a href="editarDoador.php">cadastro</a></li>
           <li><a href="#">hemocentro</a>
         	<ul>
             	<li><a href="https://www.hemocentro.unicamp.br/">hemocentro Unicamp</a>
