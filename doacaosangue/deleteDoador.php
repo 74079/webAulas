@@ -2,9 +2,9 @@
 include 'connect.php';
 
 
-$id = $_GET['idProduto'];
+$id = $_GET['idDoador'];
 
-$sql="delete from produto where idProduto=$id;";
+$sql="delete from Doador where idDoador=$id;";
 mysqli_query($con, $sql);
 
 
