@@ -1,8 +1,8 @@
 <?php
     include 'connect.php';
-    include 'checkLogin.php';
+    include 'checkLogin.php';// quando na pagina check nao exixtir na sessao ele manda para ca para ser criada outra sessao ou fazer a busca caso exista 
 
-    $s="select*from reg where id='$_SESSION[id]'";
+    $s="select*from reg where id='$_SESSION[id]'";// quando o usuario volta ao home e criado no logom esse sessiom e assim ele sabera que esse usuario esta cadastrado oelo id do usuario 
     $qu= mysqli_query($con, $s);
     $f=mysqli_fetch_assoc($qu);
     

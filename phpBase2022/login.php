@@ -1,6 +1,6 @@
 <?php
 
-include'connect.php';
+include'connect.php';// fazer uma conecção com a banco de dados 
 
 // is set 
 if(isset($_POST['sub'])){
@@ -10,8 +10,8 @@ if(isset($_POST['sub'])){
    $s= "select * from reg where username='$u' and password= '$p'";   
    $qu= mysqli_query($con, $s);
    if(mysqli_num_rows($qu)>0){
-      $f= mysqli_fetch_assoc($qu);
-      $_SESSION['id']=$f['id'];
+      $f= mysqli_fetch_assoc($qu);// f--> variavel usuario 
+      $_SESSION['id']=$f['id'];// aqi ele esta criando uma variavel sessão e esta recebendo o id do usuario 
       header ('location:home.php');
    }
    else{
