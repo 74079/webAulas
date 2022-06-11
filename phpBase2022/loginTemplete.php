@@ -13,7 +13,7 @@ if(isset($_POST['sub'])){
    if(mysqli_num_rows($qu)>0){
       $f= mysqli_fetch_assoc($qu);// f--> variavel usuario 
       $_SESSION['id']=$f['id'];// aqi ele esta criando uma variavel sessão e esta recebendo o id do usuario 
-      header ('location:home.php');
+      header ('location:index3.php');
    }
    else{
        echo 'username or password does not exist';
