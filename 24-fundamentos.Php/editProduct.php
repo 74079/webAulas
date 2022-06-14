@@ -3,9 +3,9 @@
 
 
     $id = $_GET['idProduto'];
-    $sql="select * from produto where IdProduto={$id}";
-    $query= mysqli_query($con, $sql);
-    $produto=mysqli_fetch_assoc($query);
+    $sq="select * from produto where IdProduto={$id}";
+    $qu= mysqli_query($con, $sql);
+    $produto=mysqli_fetch_assoc($qu);
 ?>
 
 
