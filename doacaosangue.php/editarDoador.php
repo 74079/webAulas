@@ -3,7 +3,7 @@
     $id = $_GET['idDoador'];
     $sql="select * from Doador where idDoador={$id}";
     $query= mysqli_query($con, $sql);
-    $produto=mysqli_fetch_assoc($query);
+    $Doador=mysqli_fetch_assoc($query);
 ?>
 
 <h1> Doadores </h1>
@@ -13,51 +13,51 @@
                     <td> 
                        <!-- readonly comando para deixar id modo nao editavel, apenas visualização -->
                        Id:
-                       <input readonly="readonly" type="text"  Id="id" value="<?php echo $Doador['IdDoador']?>">
+                       <input readonly="readonly" type="text"  name="id" value="<?php echo $doador['IdDoador']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         primeiro nome: <!--retorna nome e id do produto esta funçao-->
-                        <input type="text" PrimeiroNome="PrimeiroNome" value="<?php echo $Doador['PrimeiroNome']?>">
+                        <input type="text" name="Nome" value="<?php echo $doador['Nome']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         ultimo nome: 
-                        <input type="text" SegundoNome="SegundoNome" value="<?php echo  $Doador['SegundoNome']?>">
+                        <input type="text" name="sobrenome" value="<?php echo  $doador['sobrenome']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Email: 
-                        <input type="text" Email="Email" value="<?php echo  $Doador['Email']?>">
+                        <input type="text" name="Email" value="<?php echo  $doador['Email']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Telefone: 
-                        <input type="text" Telefone="Telefone" value="<?php echo  $Doador['Telefone']?>">
+                        <input type="text" name="Telefone" value="<?php echo  $doador['Telefone']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
 
                         Cidade: 
-                        <input type="text" Cidade="Cidade" value="<?php echo  $Doador['Cidade']?>">
+                        <input type="text" name="Cidade" value="<?php echo  $doador['Cidade']?>">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
                         Bairro: 
-                        <input type="text" Bairro="Bairro" value="<?php echo  $Doador['Bairro']?>">
+                        <input type="text" name="Bairro" value="<?php echo  $doador['Bairro']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Rua: 
-                        <input type="text" Rua="Rua" value="<?php echo  $Doador['Rua']?>">
+                        <input type="text" name="Rua" value="<?php echo  $doador['Rua']?>">
                     </td>
                 </tr>
                 <tr>

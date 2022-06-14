@@ -34,7 +34,7 @@
 
 
 
-<table border='1'>
+<table border='3    '>
     <tr>
         <th>
             Nome
@@ -48,9 +48,9 @@
     </tr>
 
 <?php
-$sq="select * from produto";/*buscando o produto*/
-$qu=mysqli_query($con,$sq);
-while($f=  mysqli_fetch_assoc($qu)){/*faz retoorna todos os produtos ate retorna todos os produtos da ultima linha  ou seja $f--> e nome objeto nome do produto onde retorna tudo o preco e nome do produto */
+$sql="SELECT * FROM 5si.produto";/*buscando o produto*/
+$query=mysqli_query($con,$sql);
+while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate retorna todos os produtos da ultima linha  ou seja $f--> e nome objeto nome do produto onde retorna tudo o preco e nome do produto */
 
     ?>
     <tr><!--indica apenas uma linha do produto -->
