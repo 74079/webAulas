@@ -16,7 +16,7 @@
                 <tr>
                     <td>
                         primeiro Nome: <!--retorna nome e id do produto esta funçao-->
-                        <input type="text"  name="Nome" >
+                        <input type="text"  name="nome"  >
                     </td>
                 </tr>
                 <tr>
@@ -28,33 +28,33 @@
                 <tr>
                     <td>
                         Email: 
-                        <input type="text" name="Email" >
+                        <input type="text" name="email" >
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Telefone: 
-                        <input type="text" name="Telefone" >
+                        <input type="text" name="telefone" >
                     </td>
                 </tr>
                 <tr>
                     <td>
 
                         Cidade: 
-                        <input type="text" name="Cidade">
+                        <input type="text" name="cidade">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
                         Bairro: 
-                        <input type="text" name="Bairro" >
+                        <input type="text" name="bairro" >
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Rua: 
-                        <input type="text" name="Rua" >
+                        <input type="text" name="rua" >
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +97,7 @@
     </tr>
 
 <?php
-$sql="SELECT * FROM 5si.doador";/*buscando o doador*/
+$sql="SELECT * FROM doador";/*buscando o doador*/
 $query=mysqli_query($con,$sql);
 while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate retorna todos os produtos da ultima linha  ou seja $f--> e nome objeto nome do produto onde retorna tudo o preco e nome do produto */
 
@@ -134,9 +134,10 @@ while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate reto
             <a href="deleteDoador.php?idDoador=<?php echo $f['IdDoador']?>">Deletar</a>
         </td>
         <td>
-            <a href="editDoador.php?idDoador=<?php echo $f['IdDoador']?>">Alterar</a>
+            <a href="editarDoador.php?idDoador=<?php echo $f['IdDoador']?>">Alterar</a>
         </td>
     </tr>
+   
     <?php
 }
 ?>
