@@ -1,15 +1,4 @@
 
-
-
-
-<?php
-include 'connect.php';
-$sql="select * from doador where idDoador={$id}";
-$query= mysqli_query($con, $sql);
-$doador=mysqli_fetch_assoc($query);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -423,7 +412,7 @@ h5{
 
 <nav class="menu">
 	<ul>
-    	<li> <a href="viewall.php">cadastro</a></li>
+    	<li> <a href="viewall.php/cadastro.php">cadastro</a></li>
           <li><a href="#">hemocentro</a>
         	<ul>
             	<li><a href="https://www.hemocentro.unicamp.br/">hemocentro Unicamp</a>
