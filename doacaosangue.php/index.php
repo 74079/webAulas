@@ -412,7 +412,7 @@ h5{
 
 <nav class="menu">
 	<ul>
-    	<li> <a href="viewall.php/cadastro.php">cadastro</a></li>
+    	<li> <a href="cadastro.php">cadastro</a></li>
           <li><a href="#">hemocentro</a>
         	<ul>
             	<li><a href="https://www.hemocentro.unicamp.br/">hemocentro Unicamp</a>

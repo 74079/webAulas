@@ -3,7 +3,6 @@
     include 'connect.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +28,7 @@
 	*{
 	margin:0;
 	padding:0;
-	color: azure;
+	color: #222;
 	font-family:'Arial';
 	}
 	
@@ -81,7 +80,7 @@
 	
 .menu a:hover{
 	
-	background-color: black;
+	background-color:green;
 	}
 
 .menu ul ul li{
@@ -89,6 +88,7 @@
 	border-bottom: solid 1px #ccc;
 	}
 .menu ul ul li a{
+	
 	background-color:rgb(75, 194, 207);
 	}
 #bt_menu{
@@ -176,6 +176,7 @@ label[for='bt_menu']{
 	width: 100%;
 	margin-left:auto;
 	height: 140px;
+
 	background-color:  cadetblue;
 }
 
@@ -186,7 +187,7 @@ h1{
 
 h3{
 	margin-left: 10%;
-	line-height: 700%;
+	line-height: 1000%;
 }
 
 
@@ -232,7 +233,7 @@ h3{
 
 .titulo h6{
 	width: 100%;
-	height: 2px;
+	border: 3px solid #4CAF50;
 	background-color:#4CAF50;
 }
 
@@ -254,6 +255,7 @@ h3{
 .rodape{
 	width: 100%;
 	margin-top: 50px;
+	
 }
 
 .rodape>ul{
@@ -294,9 +296,14 @@ h3{
 	color: #222;
 }
 
-.cadastro{
-    margin-top: 30px;
-    margin-left: 150px;
+.cadastro{ /*almeta a borda da tela */ 
+	height: 1000%;
+    margin-top: 50px;
+    color: #222;
+}
+
+.tabela{
+	margin-top: 50px;
     color: #222;
 }
 
@@ -417,7 +424,7 @@ h3{
 
 
 
-<table border='1'>
+<table class="talela" border='1'>
     <tr>
         <th>
             Nome
