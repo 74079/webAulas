@@ -1,3 +1,17 @@
+<?php
+   include 'connect.php';
+   include 'checkLogin.php';
+   
+   $sql="select*from reg where id='$_SESSION[id]'"; 
+   $query= mysqli_query($con, $sql);
+   $f=mysqli_fetch_assoc($query);
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from

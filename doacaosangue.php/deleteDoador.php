@@ -8,5 +8,5 @@ $sql="delete from Doador where idDoador=$id;";
 mysqli_query($con, $sql);
 
 
-header('location:viewall.php');
+header('location:cadastro.php');
 ?>

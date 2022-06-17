@@ -233,7 +233,7 @@ h3{
 
 .titulo h6{
 	width: 100%;
-	border: 3px solid #4CAF50;
+	height:3px;
 	background-color:#4CAF50;
 }
 
@@ -297,21 +297,98 @@ h3{
 }
 
 .cadastro{ /*almeta a borda da tela */ 
-	height: 1000%;
+	height: 180%;
     margin-top: 50px;
     color: #222;
 }
 
-.tabela{
-	margin-top: 50px;
-    color: #222;
+
+
+.tableresult {
+  
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
 }
+.tableresult tr:hover {background-color: green;}
+
+
 
 .imagem img{
 	width: 100% ;
 	height:400px;
 	margin-top: 40px;
-	
+}
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 </style>
@@ -354,77 +431,93 @@ h3{
 	<li class="doacaosangue">Doação de sangue</li>
 </ul>
 <div class="imagem">
-   <img src="https://www.hospitaldecruzilia.com.br/site/images/DOACAO%20DE%20SANGUE.jpg">
-</div>
+   <img src="https://www.hospitaldecruzilia.com.br/site/images/DOACAO%20DE%20SANGUE.jpg"></div>
 
- <div class="cadastro">
+
+ <div class="container">
 
 
 	<form method="POST" action="addDoador.php" enctype="multipart/form-data">
-        <table>
-                <tr>
-                    <td> 
-                       <!-- readonly comando para deixar id modo nao editavel, apenas visualização -->
-                       Id:
-                       <input readonly="readonly" type="text"  name="id">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        primeiro Nome: <!--retorna nome e id do produto esta funçao-->
-                        <input type="text"  name="nome"  >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Sobre Nome: 
-                        <input type="text"  name="sobrenome" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Email: 
-                        <input type="text" name="email" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Telefone: 
-                        <input type="text" name="telefone" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-
-                        Cidade: 
-                        <input type="text" name="cidade">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Bairro: 
-                        <input type="text" name="bairro" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Rua: 
-                        <input type="text" name="rua" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="submit" name="sub">
-                    </td>
-                </tr>            
-            </table>
-        </form>   
+	
+	  <div class="row">
+      <div class="col-25">
+	    <label for="fname">Primeiro nome</label>
+	  </div>
+	  <div class="col-75">
+        <input type="text"  name="nome" placeholder="seu Primeiro nome..">
+		</div>	
+	</div>
 
 
+    <div class="row">
+    <div class="col-25">
+      <label for="lname">Sobre Nome</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="sobrenome" placeholder="seu sobre nome..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="email" placeholder="seu email..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Telefone</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="telefone" placeholder="seu Telefone..">
+    </div>
+  </div>
 
 
-<table class="talela" border='1'>
+  <div class="row">
+    <div class="col-25">
+      <label for="cidade">Cidade</label>
+    </div>
+    <div class="col-75">
+      <select id="cidade" name="cidade">
+        <option value="capinas">capinas</option>
+        <option value="hortolandia">hortolandia</option>
+        <option value="sumare">sumare</option>
+		<option value="valinhos">valinhos</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">bairro</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="bairro" placeholder="seu bairro..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Rua</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="rua" placeholder="sua Rua..">
+    </div>
+  </div>
+
+  <div class="row">
+    <input type="submit" value="Submit"  name="sub">
+  </div>
+  </form>
+</div>
+
+
+<table class= "tableresult" border='1'>
+	
     <tr>
         <th>
             Nome
@@ -452,12 +545,14 @@ h3{
         </th>
     </tr>
 
+
 <?php
 $sql="SELECT * FROM doador";/*buscando o doador*/
 $query=mysqli_query($con,$sql);
 while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate retorna todos os produtos da ultima linha  ou seja $f--> e nome objeto nome do produto onde retorna tudo o preco e nome do produto */
 
     ?>
+	
     <tr><!--indica apenas uma linha do produto -->
         <td>
             <?php echo $f['Nome']?>
@@ -493,15 +588,19 @@ while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate reto
             <a href="editarDoador.php?idDoador=<?php echo $f['IdDoador']?>">Alterar</a>
         </td>
     </tr>
-   
+
     <?php
+	
 }
+
 ?>
+</table>
 
     <br><br>
 
-</div>
+
   </form> 
+  
 
 	<h6></h6>
     

@@ -426,7 +426,7 @@ h5{
             </ul>
         </li>
       
-        <li><a href="#">Contato</a></li>
+        <li><a href="loginTemplete.php">Ja sou doador</a></li>
     </ul>
  </nav>
 <nav class="titulo">
