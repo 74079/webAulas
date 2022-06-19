@@ -1,4 +1,22 @@
 
+<?php
+header('Content-Type: text/html; charset=utf-8');
+include 'connect.php';
+if(isset($_POST['sub'])){
+    $t=$_POST['text'];
+    $u=$_POST['user'];
+    $p=$_POST['pass'];
+    $c=$_POST['city'];
+    $g=$_POST['gen'];
+
+    if($_FILES['f1']['name']){
+        move_uploaded_file($_FILES['f1']['tmp_name'], "image/".$_FILES['f1']['name']);
+        $img="image/".$_FILES['f1']['name'];
+    }
+    $i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
+    mysqli_query($con, $i);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
