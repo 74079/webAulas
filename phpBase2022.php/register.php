@@ -7,7 +7,6 @@ if(isset($_POST['sub'])){
     $t=$_POST['text'];
     $u=$_POST['user'];
     $p=$_POST['pass'];
-    $img=$_POST['image'];
     $c=$_POST['city'];
     $g=$_POST['gen'];
 
@@ -123,7 +122,7 @@ input[type=submit]:hover {
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
 
-      <form method="post" enctype="multipart/form-data">
+      <form action="../../index.html" method="post">
         <div class="input-group mb-3">
         <input type="text" class="form-control" name="text" placeholder="Full name">
           <div class="input-group-append">
@@ -134,7 +133,7 @@ input[type=submit]:hover {
         </div>
 
         <div class="input-group mb-3">
-          <input type="text" class="form-control" name="user" placeholder="nome Usuario">
+          <input type="password" class="form-control" name="pass" placeholder="nome Usuario">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -143,7 +142,7 @@ input[type=submit]:hover {
         </div>
       
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="pass">
+          <input type="password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -166,7 +165,8 @@ input[type=submit]:hover {
                 $nomeItem = $item['nameCity'];
                 $idCity = $item['idCity'];
                 echo "                                
-                    <option value=$nomeItem>$nomeItem</option>";
+                    <option value=$nomeItem>$nomeItem</option>                                
+                ";
             }
             ?>
         </select>
