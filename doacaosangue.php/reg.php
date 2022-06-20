@@ -7,7 +7,6 @@ if(isset($_POST['sub'])){
     $t=$_POST['text'];
     $u=$_POST['user'];
     $p=$_POST['pass'];
-    $img=$_POST['image'];
     $c=$_POST['city'];
     $g=$_POST['gen'];
 
@@ -17,6 +16,7 @@ if(isset($_POST['sub'])){
     }
     $i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
     mysqli_query($con, $i);
+    header ('location:doador.php');
 }
 ?>
 
@@ -116,16 +116,16 @@ input[type=submit]:hover {
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="AdminLTE-3.2.0/index2.html"><b>HEMOCE</b>HT</a>
   </div>
 
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Register a new membership</p>
+      <p class="login-box-msg">Registra seu Novo Cadastro</p>
 
       <form method="post" enctype="multipart/form-data">
         <div class="input-group mb-3">
-        <input type="text" class="form-control" name="text" placeholder="Full name">
+        <input type="text" class="form-control" name="text" placeholder="Nome Completo">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -182,7 +182,7 @@ input[type=submit]:hover {
         <div class="col-25">
         </div>
         <div class="col-75">
-        <input type="file" id="lname" name="f1" >
+        <input type="file" name="f1" >
         </div>
     </div>
     
@@ -191,7 +191,7 @@ input[type=submit]:hover {
             <div class="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               <label for="agreeTerms">
-               I agree to the <a href="#">terms</a>
+              Aceita os <a href="termo.html">termos</a>
               </label>
             </div>
           </div>
@@ -199,6 +199,7 @@ input[type=submit]:hover {
           <div class="col-4">
           <input type="submit" value="cadastrar"  name="sub">
           </div>
+          
           <!-- /.col -->
     </div>
       </form>
@@ -206,11 +207,11 @@ input[type=submit]:hover {
         <p>- ou -</p>
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i>
-          Logar com Facebook
+          Faça Login usando o Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i>
-          Logar com Google+
+          Faça Login usando o  Google+
         </a>
       </div>
 

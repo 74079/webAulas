@@ -419,14 +419,14 @@ input[type=submit]:hover {
             </ul>
         </li>
       
-        <li><a href="#">Contato</a></li>
+        <li><a href="cadastro.php">Doador</a></li>
     </ul>
  </nav>
 
 
 <nav class="titulo">
     
- <h1 style="font-size:60px; color: #222; font-family:Arial;" >HOMECE</h1>
+ <h1  style="font-size:60px; font-family:Arial;" ><a style = "text-decoration:none;" href="index.php">HOMECE</a></h1>
  <ul>
 	<li class="doacaosangue">Doação de sangue</li>
 </ul>
@@ -477,19 +477,29 @@ input[type=submit]:hover {
   </div>
 
 
+
+  <div>
   <div class="row">
-    <div class="col-25">
-      <label for="cidade">Cidade</label>
-    </div>
-    <div class="col-75">
-      <select id="cidade" name="cidade">
-        <option value="capinas">capinas</option>
-        <option value="hortolandia">hortolandia</option>
-        <option value="sumare">sumare</option>
-		<option value="valinhos">valinhos</option>
-      </select>
-    </div>
+   <div class="col-25">
+       <label for="cidade">Cidade</label>
   </div>
+        <div class="col-75">
+        <select name="city" id="cidade">
+            <option value="">Selecionar Cidade</option>
+            <?php
+            $sqlCity= mysqli_query($con, "select * from city");
+                                        
+            while($item = mysqli_fetch_assoc($sqlCity))
+            {
+                $nomeItem = $item['nameCity'];
+                $idCity = $item['idCity'];
+                echo "                                
+                    <option value=$nomeItem>$nomeItem</option>";
+            }
+            ?>
+        </select>
+        </div>
+    </div>
 
   <div class="row">
     <div class="col-25">
