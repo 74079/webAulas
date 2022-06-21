@@ -4,6 +4,6 @@ session_start();// exclui essa variavel sessao com esse id do usuario essa parrt
 
 unset($_SESSION['id']);
 
-header('location:editarDoador.php');
+header('location:loginTemplete.php');
 
 ?>

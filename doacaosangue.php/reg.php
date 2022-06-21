@@ -16,10 +16,9 @@ if(isset($_POST['sub'])){
     }
     $i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
     mysqli_query($con, $i);
-    header ('location:doador.php');
+    header ('location:LoginTemplete.php');
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -143,7 +142,7 @@ input[type=submit]:hover {
         </div>
       
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="pass">
+          <input type="password" class="form-control" name = "pass"placeholder="pass">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

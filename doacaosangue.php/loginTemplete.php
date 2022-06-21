@@ -94,7 +94,7 @@ if(isset($_POST['sub'])){
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html">Esqueci minha senha</a>
+        <a href="edit.php">Esqueci minha senha</a>
       </p>
       <p class="mb-0">
         <a href="reg.php" class="text-center">Registre uma nova adesão</a>

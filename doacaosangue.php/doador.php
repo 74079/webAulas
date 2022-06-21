@@ -214,7 +214,7 @@ $f=mysqli_fetch_assoc($qu);
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Número de Doadores 
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -222,19 +222,19 @@ $f=mysqli_fetch_assoc($qu);
               <li class="nav-item">
                 <a href="./index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Agendar Hoario</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Agendamentos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Sou Doardor</p>
                 </a>
               </li>
         </ul>
@@ -251,14 +251,9 @@ $f=mysqli_fetch_assoc($qu);
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
+            <h1 class="m-0">Nivel De Doacoes Anual</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
-            </ol>
-          </div><!-- /.col -->
+          
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -272,21 +267,21 @@ $f=mysqli_fetch_assoc($qu);
             <div class="card">
               <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Online Store Visitors</h3>
-                  <a href="javascript:void(0);">View Report</a>
+                  <h3 class="card-title">Números do mês</h3>
+                  <a href="javascript:void(0);">Ver relatório</a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="d-flex">
                   <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">820</span>
-                    <span>Visitors Over Time</span>
+                    <span class="text-bold text-lg">Total 820 doadores</span>
+                    <span>Mês de Junho 2022</span>
                   </p>
                   <p class="ml-auto d-flex flex-column text-right">
                     <span class="text-success">
                       <i class="fas fa-arrow-up"></i> 12.5%
                     </span>
-                    <span class="text-muted">Since last week</span>
+                    <span class="text-muted">Porcentagem de crescimento</span>
                   </p>
                 </div>
                 <!-- /.d-flex -->
@@ -297,11 +292,11 @@ $f=mysqli_fetch_assoc($qu);
 
                 <div class="d-flex flex-row justify-content-end">
                   <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This Week
+                    <i class="fas fa-square text-primary"></i> Mês Atual
                   </span>
 
                   <span>
-                    <i class="fas fa-square text-gray"></i> Last Week
+                    <i class="fas fa-square text-gray"></i> Mês Passado
                   </span>
                 </div>
               </div>
@@ -310,7 +305,7 @@ $f=mysqli_fetch_assoc($qu);
 
             <div class="card">
               <div class="card-header border-0">
-                <h3 class="card-title">Products</h3>
+                <h3 class="card-title">Região Metropolitada de Campinas</h3>
                 <div class="card-tools">
                   <a href="#" class="btn btn-tool btn-sm">
                     <i class="fas fa-download"></i>
@@ -324,25 +319,25 @@ $f=mysqli_fetch_assoc($qu);
                 <table class="table table-striped table-valign-middle">
                   <thead>
                   <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
+                    <th>Cidade</th>
+                    <th>Doadores</th>
+                    <th>Cresciemento</th>
+                    <th>Buscar</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
+                      <img src="AdminLTE-3.2.0/dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      Campinas
                     </td>
-                    <td>$13 USD</td>
+                    <td>29 Mil</td>
                     <td>
                       <small class="text-success mr-1">
                         <i class="fas fa-arrow-up"></i>
                         12%
                       </small>
-                      12,000 Sold
+                      123,000 Ano
                     </td>
                     <td>
                       <a href="#" class="text-muted">
@@ -352,16 +347,16 @@ $f=mysqli_fetch_assoc($qu);
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
+                      <img src="AdminLTE-3.2.0/dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      Hortôlandia
                     </td>
-                    <td>$29 USD</td>
+                    <td>23 Mil</td>
                     <td>
                       <small class="text-warning mr-1">
                         <i class="fas fa-arrow-down"></i>
                         0.5%
                       </small>
-                      123,234 Sold
+                      12,000 Ano
                     </td>
                     <td>
                       <a href="#" class="text-muted">
@@ -371,16 +366,16 @@ $f=mysqli_fetch_assoc($qu);
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
+                      <img src="AdminLTE-3.2.0/dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      Sumaré
                     </td>
-                    <td>$1,230 USD</td>
+                    <td>15 Mil</td>
                     <td>
                       <small class="text-danger mr-1">
                         <i class="fas fa-arrow-down"></i>
                         3%
                       </small>
-                      198 Sold
+                      198 Ano
                     </td>
                     <td>
                       <a href="#" class="text-muted">
@@ -390,17 +385,17 @@ $f=mysqli_fetch_assoc($qu);
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
+                      <img src="AdminLTE-3.2.0/dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      Paulinia
                       <span class="badge bg-danger">NEW</span>
                     </td>
-                    <td>$199 USD</td>
+                    <td>199 Mil</td>
                     <td>
                       <small class="text-success mr-1">
                         <i class="fas fa-arrow-up"></i>
                         63%
                       </small>
-                      87 Sold
+                      87 Ano
                     </td>
                     <td>
                       <a href="#" class="text-muted">
@@ -419,24 +414,24 @@ $f=mysqli_fetch_assoc($qu);
             <div class="card">
               <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales</h3>
-                  <a href="javascript:void(0);">View Report</a>
+                  <h3 class="card-title">Números Anual</h3>
+                  <a href="javascript:void(0);">Ver relatório</a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="d-flex">
                   <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
+                    <span class="text-bold text-lg">Total 18.230 Doadores</span>
+                    <span>Ano 2021</span>
                   </p>
                   <p class="ml-auto d-flex flex-column text-right">
                     <span class="text-success">
                       <i class="fas fa-arrow-up"></i> 33.1%
                     </span>
-                    <span class="text-muted">Since last month</span>
+                    <span class="text-muted">Porcentagem de crescimento</span>
                   </p>
                 </div>
-                <!-- /.d-flex -->
+               
 
                 <div class="position-relative mb-4">
                   <canvas id="sales-chart" height="200"></canvas>
@@ -444,11 +439,11 @@ $f=mysqli_fetch_assoc($qu);
 
                 <div class="d-flex flex-row justify-content-end">
                   <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
+                    <i class="fas fa-square text-primary"></i> Ano Atual
                   </span>
 
                   <span>
-                    <i class="fas fa-square text-gray"></i> Last year
+                    <i class="fas fa-square text-gray"></i> Ano Passado
                   </span>
                 </div>
               </div>
@@ -457,7 +452,7 @@ $f=mysqli_fetch_assoc($qu);
 
             <div class="card">
               <div class="card-header border-0">
-                <h3 class="card-title">Online Store Overview</h3>
+                <h3 class="card-title">Numeros de Hojê</h3>
                 <div class="card-tools">
                   <a href="#" class="btn btn-sm btn-tool">
                     <i class="fas fa-download"></i>
@@ -476,7 +471,7 @@ $f=mysqli_fetch_assoc($qu);
                     <span class="font-weight-bold">
                       <i class="ion ion-android-arrow-up text-success"></i> 12%
                     </span>
-                    <span class="text-muted">CONVERSION RATE</span>
+                    <span class="text-muted">Meta de Doadores</span>
                   </p>
                 </div>
                 <!-- /.d-flex -->
@@ -488,7 +483,7 @@ $f=mysqli_fetch_assoc($qu);
                     <span class="font-weight-bold">
                       <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
                     </span>
-                    <span class="text-muted">SALES RATE</span>
+                    <span class="text-muted">Processo de doação</span>
                   </p>
                 </div>
                 <!-- /.d-flex -->
@@ -500,7 +495,7 @@ $f=mysqli_fetch_assoc($qu);
                     <span class="font-weight-bold">
                       <i class="ion ion-android-arrow-down text-danger"></i> 1%
                     </span>
-                    <span class="text-muted">REGISTRATION RATE</span>
+                    <span class="text-muted">Doadores Hojê</span>
                   </p>
                 </div>
                 <!-- /.d-flex -->
@@ -525,10 +520,10 @@ $f=mysqli_fetch_assoc($qu);
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
+    <strong>Todos os direitos reservados &copy; 2020-2022 <a href="index.php">HEMOCE HT</a>.</strong>
+     
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
+      <b>2022</b> 
     </div>
   </footer>
 </div>
@@ -541,7 +536,7 @@ $f=mysqli_fetch_assoc($qu);
 <!-- Bootstrap -->
 <script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
-<script src="AdminLTE-3.2.0/AdminLTE-3.2.0/dist/js/adminlte.js"></script>
+<script src="AdminLTE-3.2.0/dist/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
 <script src="AdminLTE-3.2.0/plugins/chart.js/Chart.min.js"></script>
@@ -551,3 +546,4 @@ $f=mysqli_fetch_assoc($qu);
 <script src="AdminLTE-3.2.0/dist/js/pages/dashboard3.js"></script>
 </body>
 </html>
+

@@ -182,6 +182,7 @@ label[for='bt_menu']{
 
 h1{
 	margin-left: 10%;
+	 background color:white;
 	line-height: 225%;
 }
 
@@ -426,7 +427,7 @@ input[type=submit]:hover {
 
 <nav class="titulo">
     
- <h1  style="font-size:60px; font-family:Arial;" ><a style = "text-decoration:none;" href="index.php">HOMECE</a></h1>
+ <h1  style="font-size:60px; font-family:Arial;" ><a style = "text-decoration:none; color: white; " href="index.php">HOMECE</a></h1>
  <ul>
 	<li class="doacaosangue">Doação de sangue</li>
 </ul>
@@ -520,7 +521,7 @@ input[type=submit]:hover {
   </div>
 
   <div class="row">
-    <input type="submit" value="Submit"  name="sub">
+    <input type="submit" value="enviar"  name="sub">
   </div>
   </form>
 </div>
@@ -568,7 +569,7 @@ while($f=  mysqli_fetch_assoc($query)){/*faz retoorna todos os produtos ate reto
             <?php echo $f['Nome']?>
         </td>
         <td>
-            <?php echo $f['sobrenome']?>
+            <?php echo $f['Sobrenome']?>
         </td>
 
         <td>
